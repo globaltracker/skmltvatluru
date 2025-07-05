@@ -19,7 +19,23 @@ namespace skmltvatluru.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult Events()
+        {
+            return View();
+        }
+        public IActionResult Gallery()
+        {
+            return View();
+        }
+        public IActionResult Sermons()
+        {
+            return View();
+        }
+        public IActionResult ContactUs()
         {
             return View();
         }
