@@ -4,9 +4,6 @@
 }
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from demos.codexcoder.com/themeforest/html/peace/peace/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Jul 2025 04:40:57 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -191,8 +188,18 @@
                                         <li><a href="index-3.html" class="active">Home Page Hindu</a></li>
                                     </ul> *@
                             </li>
+                           
                             <li>
-                                <a href="@Url.Action("Index", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">About</a>
+                                <a href="@Url.Action("About", "Home")" class="nav-item nav-link @(currentAction == "About" ? "active" : "")">About</a>
+                                @*<a href="@Url.Action("Index", "Home")">Events</a>
+                                     <ul>
+                                        <li><a href="event.html">Event Two Column</a></li>
+                                        <li><a href="event-2.html">Event Three Column</a></li>
+                                        <li><a href="event-single.html">Event Single</a></li>
+                                    </ul> *@
+                            </li>
+                             <li>
+                                <a href="@Url.Action("Services", "Home")" class="nav-item nav-link @(currentAction == "Services" ? "active" : "")">Services</a>
                                 @*<a href="@Url.Action("Index", "Home")">Events</a>
                                      <ul>
                                         <li><a href="event.html">Event Two Column</a></li>
@@ -201,7 +208,7 @@
                                     </ul> *@
                             </li>
                             <li>
-                                <a href="@Url.Action("Index", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">Events</a>
+                                <a href="@Url.Action("Events", "Home")" class="nav-item nav-link @(currentAction == "Events" ? "active" : "")">Events</a>
                                 @* <a href="@Url.Action("Index", "Home")">Home</a>
                                    <a href="#0">Causes</a> *@
                                 @* <ul>
@@ -210,7 +217,7 @@
                                     </ul> *@
                             </li>
                             <li>
-                                <a href="@Url.Action("Index", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">Gallery</a>
+                                <a href="@Url.Action("Gallery", "Home")" class="nav-item nav-link @(currentAction == "Gallery" ? "active" : "")">Gallery</a>
                                 @*  <a href="@Url.Action("Index", "Home")">Gallery</a>
                                    <a href="#0">Gallery</a>
                                     <ul>
@@ -220,7 +227,7 @@
                                     </ul> *@
                             </li>
                             <li>
-                                <a href="@Url.Action("Index", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">Sermons</a>
+                                <a href="@Url.Action("Index", "Home")" class="nav-item nav-link @(currentAction == "Sermons" ? "active" : "")">Sermons</a>
                                 @* <a href="@Url.Action("Index", "Home")">Sermons</a>
                                      <a href="#0">Sermons</a>
                                     <ul>
@@ -229,7 +236,7 @@
                                     </ul> *@
                             </li>
                             <li>
-                                <a href="@Url.Action("Index", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">Contact Us</a>
+                                <a href="@Url.Action("Contactus", "Home")" class="nav-item nav-link @(currentAction == "Contactus" ? "active" : "")">Contact Us</a>
                                 @* <a href="@Url.Action("Index", "Home")">Blog</a>
                                      <a href="#0">Blog</a>
                                     <ul>
@@ -265,7 +272,7 @@
     <div class="banner__slider banner-style3 overflow-hidden">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="banner" style="background-image: url(images/banner/1.jpeg);">
+                <div class="banner" style="background-image: url(/images/banner/1.jpeg);">
 
                     <div class="container">
                         <div class="banner__content ms-lg-auto">
@@ -277,7 +284,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="banner" style="background-image: url(images/banner/2.jpg);">
+                <div class="banner" style="background-image: url(/images/banner/2.jpg);">
                     <div class="container">
                         <div class="banner__content ms-lg-auto">
                             <h2></h2>
@@ -288,7 +295,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="banner" style="background-image: url(images/banner/3.jpg);">
+                <div class="banner" style="background-image: url(/images/banner/3.jpg);">
                     <div class="container">
                         <div class="banner__content m-lg-auto text-lg-center">
                             <h2 class="text-white"></h2>
@@ -300,7 +307,7 @@
             </div>
 
             <div class="swiper-slide">
-                <div class="banner" style="background-image: url(images/banner/4.jpeg);">
+                <div class="banner" style="background-image: url(/images/banner/4.jpeg);">
                     <div class="container">
                         <div class="banner__content m-lg-auto text-lg-center">
                             <h2 class="text-white"></h2>
@@ -311,7 +318,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="banner" style="background-image: url(images/banner/5.jpg);">
+                <div class="banner" style="background-image: url(/images/banner/5.jpg);">
                     <div class="container">
                         <div class="banner__content m-lg-auto text-lg-center">
                             <h2 class="text-white"></h2>
@@ -322,7 +329,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="banner" style="background-image: url(images/banner/6.jpg);">
+                <div class="banner" style="background-image: url(/images/banner/6.jpg);">
                     <div class="container">
                         <div class="banner__content m-lg-auto text-lg-center">
                             <h2 class="text-white"></h2>
@@ -333,7 +340,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="banner" style="background-image: url(images/banner/7.jpg);">
+                <div class="banner" style="background-image: url(/images/banner/7.jpg);">
                     <div class="container">
                         <div class="banner__content m-lg-auto text-lg-center">
                             <h2 class="text-white"></h2>
@@ -344,7 +351,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="banner" style="background-image: url(images/banner/8.jpg);">
+                <div class="banner" style="background-image: url(/images/banner/8.jpg);">
                     <div class="container">
                         <div class="banner__content m-lg-auto text-lg-center">
                             <h2 class="text-white"></h2>
@@ -355,7 +362,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="banner" style="background-image: url(images/banner/9.jpg);">
+                <div class="banner" style="background-image: url(/images/banner/9.jpg);">
                     <div class="container">
                         <div class="banner__content m-lg-auto text-lg-center">
                             <h2 class="text-white"></h2>
@@ -528,7 +535,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-12">
+                    @* <div class="col-xl-3 col-sm-6 col-12">
                         <div class="footer__links">
                             <div class="section__header">
                                 <h2>Useful Links</h2>
@@ -544,7 +551,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> *@
                 </div>
             </div>
         </div>
@@ -578,8 +585,6 @@
     <script src="~/js/wow.js"></script>
     <script src="~/js/custom.js"></script>
 </body>
-
-<!-- Mirrored from demos.codexcoder.com/themeforest/html/peace/peace/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Jul 2025 04:41:21 GMT -->
 </html>
 
 @* <!DOCTYPE html>

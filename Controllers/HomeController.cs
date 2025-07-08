@@ -23,6 +23,10 @@ namespace skmltvatluru.Controllers
         {
             return View();
         }
+        public IActionResult Services()
+        {
+            return View();
+        }
         public IActionResult Events()
         {
             return View();
