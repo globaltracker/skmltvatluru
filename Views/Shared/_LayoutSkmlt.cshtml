@@ -23,7 +23,7 @@
 
 <body>
 
-    @*  <!-- ================> preloader start here <================ -->
+    <!-- ================> preloader start here <================ -->
     <div class="preloader">
         <div class="preloader-inner">
             <div class="preloader-icon">
@@ -40,10 +40,7 @@
                 <i class="fas fa-times"></i>
             </div>
         </div>
-        <form class="form-container">
-            <input type="text" placeholder="Input Your Search" name="name">
-            <button type="submit">Search</button>
-        </form>
+
     </div>
     <!-- ================> Header Search <================ -->
     <!-- ================> Header Cart <================ -->
@@ -52,64 +49,6 @@
         <div class="top-content">
             <img src="~/images/logo/02.png" alt="logo">
             <span class="side-sidebar-close-btn"><i class="fas fa-times"></i></span>
-        </div>
-        <div class="bottom-content">
-            <div class="cart-products">
-                <h4 class="title">Shopping cart</h4>
-                <div class="single-product-item">
-                    <div class="thumb">
-                        <img src="~/images/cart/01.jpg" alt="blackfriday">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Color Pencil</h4>
-                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
-                        <a href="#" class="remove-cart">Remove</a>
-                    </div>
-                </div>
-                <div class="single-product-item">
-                    <div class="thumb">
-                        <img src="~/images/cart/02.jpg" alt="blackfriday">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Water Pot</h4>
-                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
-                        <a href="#" class="remove-cart">Remove</a>
-                    </div>
-                </div>
-                <div class="single-product-item">
-                    <div class="thumb">
-                        <img src="~/images/cart/03.jpg" alt="blackfriday">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Art Paper</h4>
-                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
-                        <a href="#" class="remove-cart">Remove</a>
-                    </div>
-                </div>
-                <div class="single-product-item">
-                    <div class="thumb">
-                        <img src="~/images/cart/04.jpg" alt="blackfriday">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Stop Watch</h4>
-                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
-                        <a href="#" class="remove-cart">Remove</a>
-                    </div>
-                </div>
-                <div class="single-product-item">
-                    <div class="thumb">
-                        <img src="~/images/cart/05.jpg" alt="blackfriday">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Comics Book</h4>
-                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
-                        <a href="#" class="remove-cart">Remove</a>
-                    </div>
-                </div>
-                <div class="btn-wrapper text-center">
-                    <a href="check-out.html" class="default-btn move-right"><span>Checkout</span></a>
-                </div>
-            </div>
         </div>
     </div>
     <!-- ================> Header Cart <================ -->
@@ -124,11 +63,11 @@
                                 <ul>
                                     <li>
                                         <i class="fas fa-phone-alt"></i>
-                                        +8812 345 678 912
+                                        +91 9885765666
                                     </li>
                                     <li>
                                         <i class="fas fa-envelope"></i>
-                                        info@yourmail.com
+                                        trinadhit@gmail.com
                                     </li>
                                 </ul>
                             </div>
@@ -147,20 +86,20 @@
                                             <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                                         </ul>
                                     </div>
-                                    <div class="header__top-search">
+                                   @*  <div class="header__top-search">
                                         <ul>
                                             <li class="search__icon"><i class="fas fa-search"></i></li>
                                             <li class="cart__icon"><i class="fas fa-shopping-bag"></i><span>04</span></li>
                                         </ul>
-                                    </div>
+                                    </div> *@
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>*@
-
+        </div>
+    </header>
     <div class="header__bottom">
         <div class="container">
             <div class="header__mainmenu navbar navbar-expand-xl navbar-light">
@@ -188,18 +127,9 @@
                                         <li><a href="index-3.html" class="active">Home Page Hindu</a></li>
                                     </ul> *@
                             </li>
-                           
+
                             <li>
-                                <a href="@Url.Action("About", "Home")" class="nav-item nav-link @(currentAction == "About" ? "active" : "")">About</a>
-                                @*<a href="@Url.Action("Index", "Home")">Events</a>
-                                     <ul>
-                                        <li><a href="event.html">Event Two Column</a></li>
-                                        <li><a href="event-2.html">Event Three Column</a></li>
-                                        <li><a href="event-single.html">Event Single</a></li>
-                                    </ul> *@
-                            </li>
-                             <li>
-                                <a href="@Url.Action("Services", "Home")" class="nav-item nav-link @(currentAction == "Services" ? "active" : "")">Services</a>
+                                <a href="@Url.Action("About", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">About</a>
                                 @*<a href="@Url.Action("Index", "Home")">Events</a>
                                      <ul>
                                         <li><a href="event.html">Event Two Column</a></li>
@@ -208,7 +138,16 @@
                                     </ul> *@
                             </li>
                             <li>
-                                <a href="@Url.Action("Events", "Home")" class="nav-item nav-link @(currentAction == "Events" ? "active" : "")">Events</a>
+                                <a href="@Url.Action("Services", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">Services</a>
+                                @*<a href="@Url.Action("Index", "Home")">Events</a>
+                                     <ul>
+                                        <li><a href="event.html">Event Two Column</a></li>
+                                        <li><a href="event-2.html">Event Three Column</a></li>
+                                        <li><a href="event-single.html">Event Single</a></li>
+                                    </ul> *@
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Events", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">Events</a>
                                 @* <a href="@Url.Action("Index", "Home")">Home</a>
                                    <a href="#0">Causes</a> *@
                                 @* <ul>
@@ -217,7 +156,7 @@
                                     </ul> *@
                             </li>
                             <li>
-                                <a href="@Url.Action("Gallery", "Home")" class="nav-item nav-link @(currentAction == "Gallery" ? "active" : "")">Gallery</a>
+                                <a href="@Url.Action("Gallery", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">Gallery</a>
                                 @*  <a href="@Url.Action("Index", "Home")">Gallery</a>
                                    <a href="#0">Gallery</a>
                                     <ul>
@@ -227,7 +166,7 @@
                                     </ul> *@
                             </li>
                             <li>
-                                <a href="@Url.Action("Index", "Home")" class="nav-item nav-link @(currentAction == "Sermons" ? "active" : "")">Sermons</a>
+                                <a href="@Url.Action("Sermons", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">Sermons</a>
                                 @* <a href="@Url.Action("Index", "Home")">Sermons</a>
                                      <a href="#0">Sermons</a>
                                     <ul>
@@ -236,7 +175,7 @@
                                     </ul> *@
                             </li>
                             <li>
-                                <a href="@Url.Action("Contactus", "Home")" class="nav-item nav-link @(currentAction == "Contactus" ? "active" : "")">Contact Us</a>
+                                <a href="@Url.Action("Contactus", "Home")" class="nav-item nav-link @(currentAction == "Index" ? "active" : "")">Contact Us</a>
                                 @* <a href="@Url.Action("Index", "Home")">Blog</a>
                                      <a href="#0">Blog</a>
                                     <ul>
@@ -266,153 +205,8 @@
             </div>
         </div>
     </div>
-    </header>
+    @*  </header> *@
     <!-- ================> header section end here <==================    -->
-    <!-- ===============> Banner section start here <==================  -->
-    <div class="banner__slider banner-style3 overflow-hidden">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(/images/banner/1.jpeg);">
-
-                    <div class="container">
-                        <div class="banner__content ms-lg-auto">
-                            <h2 class="text-white"></h2>
-                            <p class="text-white"></p>
-                            @* <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a> *@
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(/images/banner/2.jpg);">
-                    <div class="container">
-                        <div class="banner__content ms-lg-auto">
-                            <h2></h2>
-                            <p></p>
-                            @* <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a> *@
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(/images/banner/3.jpg);">
-                    <div class="container">
-                        <div class="banner__content m-lg-auto text-lg-center">
-                            <h2 class="text-white"></h2>
-                            <p class="text-white"></p>
-                            @* <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a> *@
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(/images/banner/4.jpeg);">
-                    <div class="container">
-                        <div class="banner__content m-lg-auto text-lg-center">
-                            <h2 class="text-white"></h2>
-                            <p class="text-white"></p>
-                            @* <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a> *@
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(/images/banner/5.jpg);">
-                    <div class="container">
-                        <div class="banner__content m-lg-auto text-lg-center">
-                            <h2 class="text-white"></h2>
-                            <p class="text-white"></p>
-                            @* <a href="#" class="default-btn movke-right"><span>GET HELP NOW</span></a> *@
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(/images/banner/6.jpg);">
-                    <div class="container">
-                        <div class="banner__content m-lg-auto text-lg-center">
-                            <h2 class="text-white"></h2>
-                            <p class="text-white"></p>
-                            @* <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a> *@
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(/images/banner/7.jpg);">
-                    <div class="container">
-                        <div class="banner__content m-lg-auto text-lg-center">
-                            <h2 class="text-white"></h2>
-                            <p class="text-white"></p>
-                            @* <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a> *@
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(/images/banner/8.jpg);">
-                    <div class="container">
-                        <div class="banner__content m-lg-auto text-lg-center">
-                            <h2 class="text-white"></h2>
-                            <p class="text-white"></p>
-                            @* <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a> *@
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(/images/banner/9.jpg);">
-                    <div class="container">
-                        <div class="banner__content m-lg-auto text-lg-center">
-                            <h2 class="text-white"></h2>
-                            <p class="text-white"></p>
-                            @* <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a> *@
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ================> Banner section end here <================== -->
-    <!-- ================> Event Time section start here <================== -->
-    <div class="eventtime">
-        <div class="container">
-            <div class="eventtime__area">
-                <div class="eventtime__left">
-                    <h2>Upcoming Event</h2>
-                </div>
-                <div class="eventtime__center">
-                    <ul class="countdown count-down" data-date="Nove 09, 2022 21:14:01">
-                        <li class="clock-item">
-                            <span class="count-number days">56</span>
-                            <p class="count-text">Days</p>
-                        </li>
-
-                        <li class="clock-item">
-                            <span class="count-number hours">16</span>
-                            <p class="count-text">Hours</p>
-                        </li>
-
-                        <li class="clock-item">
-                            <span class="count-number minutes">25</span>
-                            <p class="count-text">Minutes</p>
-                        </li>
-
-                        <li class="clock-item">
-                            <span class="count-number seconds">19</span>
-                            <p class="count-text">Seconds</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="eventtime__right">
-                    <a href="#" class="default-btn move-right"><span>@* ALL EVENTS *@</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ================> Event Time section end here <================== -->
-
     <div>
         @RenderBody()
     </div>
@@ -456,7 +250,7 @@
             <div class="container">
                 <div class="row g-4">
                     <div class="col-xl-3 col-sm-6 col-12">
-                        <div class="footer__about">
+                        @* <div class="footer__about">
                             <div class="section__header">
                                 <h2>About Peace</h2>
                             </div>
@@ -468,10 +262,10 @@
                                     <p>Dramatically strategize economically sound action items for e-business niches. Quickly re-engineer 24/365 potentialities before.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> *@
                     </div>
                     <div class="col-xl-3 col-sm-6 col-12">
-                        <div class="footer__tags">
+                        @* <div class="footer__tags">
                             <div class="section__header">
                                 <h2>Post Tag</h2>
                             </div>
@@ -491,11 +285,11 @@
                                     <li><a href="#">Media</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> *@
                     </div>
                     <div class="col-xl-3 col-sm-6 col-12">
                         <div class="footer__post">
-                            <div class="section__header">
+                            @*   <div class="section__header">
                                 <h2>Recent Post</h2>
                             </div>
                             <div class="section__wrapper">
@@ -533,9 +327,9 @@
                                     </div>
                                 </div>
                             </div>
+                        </div> *@
                         </div>
-                    </div>
-                    @* <div class="col-xl-3 col-sm-6 col-12">
+                        @* <div class="col-xl-3 col-sm-6 col-12">
                         <div class="footer__links">
                             <div class="section__header">
                                 <h2>Useful Links</h2>
@@ -552,21 +346,21 @@
                             </div>
                         </div>
                     </div> *@
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__bottom">
-            <div class="container">
-                <div class="footer__bottom-area text-center">
-                    <div class="footer__bottom-logo">
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom-area text-center">
+                        @*  <div class="footer__bottom-logo">
                         <a href="index.html"><img src="~/images/logo/01.png" alt="footer logo"></a>
-                    </div>
-                    <div class="footer__bottom-content">
-                        <p>Copyright &copy; 2022 <a href="index.html">Peace</a> | Designed by <a href="https://themeforest.net/user/codexcoder/portfolio">CodexCoder</a></p>
+                    </div> *@
+                        <div class="footer__bottom-content">
+                            <p>Copyright &copy; 2018 <a href="index.html">SKMLT</a> | Designed by <a href="https://google.com">Trinadh Pilli</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
     <!-- ================> Footer section end here <================== -->
     <!-- scrollToTop start here -->
@@ -586,18 +380,3 @@
     <script src="~/js/custom.js"></script>
 </body>
 </html>
-
-@* <!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-</head>
-<body>
-    <div>
-        @RenderBody()
-    </div>
-</body>
-</html>
- *@
