@@ -24,88 +24,57 @@
 <body>
 
     <!-- ================> preloader start here <================ -->
-    <div class="preloader">
+    @* <div class="preloader">
         <div class="preloader-inner">
             <div class="preloader-icon">
                 <span></span>
                 <span></span>
             </div>
         </div>
-    </div>
+    </div> *@
     <!-- ================> preloader ending here <================ -->
     <!-- ================> Header Search <================ -->
-    <div class="header-form">
+    @*  <div class="header-form">
         <div class="bg-lay">
             <div class="cross">
                 <i class="fas fa-times"></i>
             </div>
         </div>
 
-    </div>
+    </div> *@
     <!-- ================> Header Search <================ -->
     <!-- ================> Header Cart <================ -->
-    <div class="overlay"></div>
+    @*  <div class="overlay"></div>
     <div class="cart-sidebar-area">
         <div class="top-content">
             <img src="~/images/logo/02.png" alt="logo">
             <span class="side-sidebar-close-btn"><i class="fas fa-times"></i></span>
         </div>
-    </div>
+    </div> *@
     <!-- ================> Header Cart <================ -->
     <!-- ================> header section start here <================== -->
     <header class="header">
         <div class="navbar-expand-xl">
             <div class="collapse navbar-collapse" id="menubar2">
-                <div class="header__top w-100">
-                    <div class="container">
-                        <div class="header__top-area">
-                            <div class="header__top-left">
-                                <ul>
-                                    <li>
-                                        <i class="fas fa-phone-alt"></i>
-                                        +91 9885765666
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-envelope"></i>
-                                        trinadhit@gmail.com
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="header__top-center">
-                                <div class="header__top-logo d-none d-md-block">
-                                    <a href="index.html"><img src="~/images/logo/01.png" alt="logo"></a>
-                                </div>
-                            </div>
-                            <div class="header__top-right">
-                                <div class="header__top-socialsearch">
-                                    <div class="header__top-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
-                                   @*  <div class="header__top-search">
-                                        <ul>
-                                            <li class="search__icon"><i class="fas fa-search"></i></li>
-                                            <li class="cart__icon"><i class="fas fa-shopping-bag"></i><span>04</span></li>
-                                        </ul>
-                                    </div> *@
-                                </div>
-                            </div>
-                        </div>
+
+                <div class="container">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <a href="@Url.Action("Index", "Home")">
+                            <img src="/images/logo/01.png" alt="logo">
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div>
+
     </header>
     <div class="header__bottom">
         <div class="container">
             <div class="header__mainmenu navbar navbar-expand-xl navbar-light">
                 <div class="header__logo">
-                    <a href="index.html" class="d-none d-xl-block"><img src="~/images/logo/02.png" alt="logo"></a>
-                    <a href="index.html" class="d-xl-none"><img src="~/images/logo/01.png" alt="logo"></a>
+                    @* <a href="@Url.Action("Index", "Home")" class="d-none d-xl-block"><img src="~/images/logo/02.png" alt="logo"></a>
+                    <a href="@Url.Action("Index", "Home")" class="d-xl-none"><img src="~/images/logo/0001.png" alt="logo"></a> *@
                 </div>
                 <div class="header__bar">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">

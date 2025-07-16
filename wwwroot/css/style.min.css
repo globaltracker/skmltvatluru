@@ -691,8 +691,8 @@ ul li {
 }
 
 .sidebar__tab .tab-content .footer__post-inner {
-    padding-top: 20px;
-    padding-bottom: 20px
+   /* padding-top: 20px;
+    padding-bottom: 20px*/
 }
 
 .blog-style2 .blog__content, .blog__comments-details ul li, .pageheader, .header__top {
